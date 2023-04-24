@@ -1,0 +1,54 @@
+
+<html lang="en">
+<head>
+    <title>Calculator Example</title>
+</head>
+<body>
+    <div> Result
+        <span id="result"></span>
+    </div>
+</body>
+<script>
+
+    let num1=2;
+    let num2=4;
+
+    //using query parameters
+
+
+    //fetch(`/calculator/subtract?number1=${num1}&number2=${num2}`) //fetch our backend
+    //.then(response => response.json())
+    //.then(data => {
+    //    document.getElementById("result").innerHTML = data.result;
+    // })
+
+    
+   //using path parameters (this is part of path itself) - still in URL but not in ?. Everything after ? is query parameter. 
+
+
+    // fetch(`/calculator/subtract/${num1}/${num2}`) //fetch our backend or if adding, fetch(`/calculator/add/${num1}/${num2}`)
+    //.then(response => response.json())
+    //.then(data => {
+    //    document.getElementById("result").innerHTML = data.result;
+    //   console.log(data)
+    // })*/
+
+    //Using Body 
+    /*
+    fetch(`/calculator/subtract`, {
+       method: 'POST',
+       headers: {
+      'Accept': 'application/json',
+     'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({number1: 5, number2: 10})
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("result").innerHTML = data.result;
+        console.log(data)
+    })
+    */
+    
+</script>
+</html>
